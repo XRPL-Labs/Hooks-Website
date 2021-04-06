@@ -10,7 +10,7 @@
     </nav>
 
     <div class="float-md-end action-buttons">
-      <a href="https://dev.to/t/xrplhooks/top/infinity" taget="_blank" class="nes me-3 btn-sm py-1 nes-btn is-warning">Blogs</a>
+      <a href="https://dev.to/t/xrplhooks/top/infinity" target="_blank" class="nes me-3 btn-sm py-1 nes-btn is-warning">Blogs</a>
       <a href="https://github.com/XRPL-Labs/xrpld-hooks/blob/hooks-ssvm/README.md" target="_blank" class="nes nes-btn btn-sm py-1 is-primary alt-color">Quickstart</a>
     </div>
 
