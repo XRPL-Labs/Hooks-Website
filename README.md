@@ -1,24 +1,18 @@
-# hooks-homepage
+# Hooks Testnet Explorer
 
-## Project setup
+Exploring the Hooks Testnet by XRPL Labs.
+Runs on: https://hooks-testnet.xrpl-labs.com/explorer
+
+- https://xrpl-hooks.readme.io
+- https://hooks-testnet.xrpl-labs.com
+
+## VueJS Project setup/... 
 ```
 npm install
+npm run serve # Locally
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
+### Compiles and minifies for production (`/dist`)
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
