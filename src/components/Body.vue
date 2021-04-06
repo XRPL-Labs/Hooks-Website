@@ -33,7 +33,7 @@
         <h6 class="card-header bg-white rounded-0 border-0 nes text-white">Hooks</h6>
         <div class="card mb-4 border-0">
           <h3 class="card-header rounded-0 border-0 h6 nes bg-light-card-header blue">
-            <button v-clipboard:copy="ledgerInfo" class="nes-btn is-normal copy d-inline-block py-0 nes" :class="{'is-disabled': ledgerInfo === 'Connecting...'}">Copy</button>
+            <button v-clipboard:copy="JSON.stringify(ledgerInfo, null, 2)" class="nes-btn is-normal copy d-inline-block py-0 nes" :class="{'is-disabled': ledgerInfo === 'Connecting...'}">Copy</button>
             Last ledger
           </h3>
           <div class="card-body pe-5 bg-light-card">
