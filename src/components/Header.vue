@@ -31,9 +31,10 @@
 
     <p class="alert alert-primary bg-light-card-header blue-border rounded-0 shadow-sm px-3 py-2 mb-4">
       Hooks are small, efficient <b>WebAssembly modules</b> designed specifically for the XRPL.
+      <a target="_blank" href="https://coil.com/p/XUMM/XRPL-Labs-is-working-on-the-transaction-HOOKS-amendment-for-the-XRP-Ledger-Supporting-business-logic/kEmqhoqMW"><u><b>Read more about Hooks in the announcement blog post.</b></u></a>
       Hooks can be written in any language (compilable to WebAssembly) and most business
       logic and most <b>smart contract concepts</b> can be implemented in a hook.
-      <b><a href="https://xrpl-labs.com" class="blue" target="_blank"><i class="fas fa-rocket"></i> <u>Development by XRPL Labs</u></a></b>
+      <b><a href="https://xrpl-labs.com" target="_blank"><i class="fas fa-rocket"></i> <u>Development by XRPL Labs</u></a></b>
     </p>
   </div>
 </template>
