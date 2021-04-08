@@ -3,6 +3,7 @@
     <div class="row">
       <div class="col-12 col-md-6">
         <WssUrl />
+        <Faucet class="mt-3" />
         <!-- <div class="card mt-4 border-0">
           <h3 class="card-header rounded-0 border-0 h6 nes bg-card-header text-white">
             <button v-clipboard:copy="'Something here...'" class="nes-btn is-normal copy d-inline-block py-0 nes">Copy</button>
@@ -62,12 +63,14 @@
 
 <script>
 import WssUrl from './WssUrl'
+import Faucet from './Faucet'
 import LastLedger from './LastLedger'
 
 export default {
   name: 'Body',
   components: {
     WssUrl,
+    Faucet,
     LastLedger
   },
   data () {
