@@ -17,10 +17,10 @@
     <div class="nav-scroller nes mb-4">
       <nav class="nav nav-underline" aria-label="Navigation">
         <a class="ps-0 pe-4 me-3 text-dark nav-link active" href="http://hooks-testnet-explorer.xrpl-labs.com" target="_blank">Explorer</a>
-        <a class="ps-0 pe-4 me-3 text-dark nav-link" href="https://hooks-testnet.xrpl-labs.com/faucet" target="_blank">
+        <!-- <a class="ps-0 pe-4 me-3 text-dark nav-link" href="https://hooks-testnet.xrpl-labs.com/faucet" target="_blank">
           Faucet
-          <!-- <span class="badge bg-light shadow-sm text-dark align-text-bottom">27</span> -->
-        </a>
+        </a> -->
+        <!-- <span class="badge bg-light shadow-sm text-dark align-text-bottom">27</span> -->
         <a class="ps-0 pe-4 me-3 text-dark nav-link" href="https://github.com/XRPL-Labs/xrpld-hooks/tree/hooks-ssvm/hook-api-examples" target="_blank">Examples</a>
         <a class="ps-0 pe-4 me-3 text-dark nav-link" href="https://xrpl-hooks.readme.io" target="_blank">Docs</a>
         <a class="nav-link pe-4 me-3 text-dark" href="https://github.com/XRPL-Labs/xrpld-hooks" target="_blank">

@@ -2,16 +2,7 @@
   <main class="container-fluid px-0">
     <div class="row">
       <div class="col-12 col-md-6">
-        <div class="card border-0">
-          <h6 class="card-header bg-white rounded-0 border-0 nes blue">Testnet</h6>
-          <div class="card-body pe-5 py-3 bg-blue">
-            <button v-clipboard:copy="endpoint" class="nes-btn is-normal copy copy-content d-inline-block py-0 nes">Copy</button>
-            <div class="pe-5">
-              <code class="text-white">{{ endpoint }}</code>
-            </div>
-          </div>
-        </div>
-
+        <WssUrl />
         <!-- <div class="card mt-4 border-0">
           <h3 class="card-header rounded-0 border-0 h6 nes bg-card-header text-white">
             <button v-clipboard:copy="'Something here...'" class="nes-btn is-normal copy d-inline-block py-0 nes">Copy</button>
@@ -30,16 +21,7 @@
       </div>
 
       <div class="col-12 col-md-6">
-        <h6 class="card-header bg-white rounded-0 border-0 nes text-white">Hooks</h6>
-        <div class="card mb-4 border-0">
-          <h3 class="card-header rounded-0 border-0 h6 nes bg-light-card-header blue">
-            <button v-clipboard:copy="JSON.stringify(ledgerInfo, null, 2)" class="nes-btn is-normal copy d-inline-block py-0 nes" :class="{'is-disabled': ledgerInfo === 'Connecting...'}">Copy</button>
-            Last ledger
-          </h3>
-          <div class="card-body pe-5 bg-light-card">
-            <vue-json-pretty :data="ledgerInfo"></vue-json-pretty>
-          </div>
-        </div>
+        <LastLedger />
       </div>
 
       <!-- <div class="col-12">
@@ -79,40 +61,26 @@
 </template>
 
 <script>
-import RippleClient from 'rippled-ws-client'
-import VueJsonPretty from 'vue-json-pretty'
-import 'vue-json-pretty/lib/styles.css'
+import WssUrl from './WssUrl'
+import LastLedger from './LastLedger'
 
 export default {
   name: 'Body',
   components: {
-    VueJsonPretty
+    WssUrl,
+    LastLedger
   },
   data () {
     return {
-      endpoint: 'wss://hooks-testnet.xrpl-labs.com',
-      ledgerInfo: 'Connecting...',
-      connection: null
+      endpoint: 'wss://hooks-testnet.xrpl-labs.com'
     }
   },
   async mounted () {
-    this.connection = await new RippleClient(this.endpoint, { NoUserAgent: true })
-    this.connection.on('ledger', ledger => {
-      this.ledgerInfo = {
-        ledger_index: ledger.ledger_index,
-        ledger_time: ledger.ledger_time,
-        txn_count: ledger.txn_count,
-        validated_ledgers: ledger.validated_ledgers,
-        type: ledger.type,
-        ledger_hash: ledger.ledger_hash,
-        ...ledger
-      }
-    })
   }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   button.copy {
     font-size: .6em;
     position: absolute;
