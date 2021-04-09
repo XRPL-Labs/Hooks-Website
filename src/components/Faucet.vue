@@ -12,24 +12,24 @@
         <div v-if="faucet.Address === '-'" class="text-center"><button @click="getSome" class="nes-btn py-0 my-3 mt-4 nes btn-lg">Get Some</button></div>
         <div v-if="faucet.Address !== '-'" class="row">
 
-          <div class="pt-2 col-12 col-sm-3 col-lg-3 col-xl-3 border-0 nes"><small><small>Address</small></small></div>
-          <div class="pt-2 col-9 col-sm-6 col-lg-6 col-xl-7 border-0 ps-3"><div class="no-overflow"><a class="text-white" :href="link(faucet.Address)" target="_blank">{{ faucet.Address }}</a></div></div>
+          <div class="pt-2 col-12 col-sm-4 col-lg-3 col-xl-3 border-0 nes"><small><small>Address</small></small></div>
+          <div class="pt-2 col-9 col-sm-5 col-lg-6 col-xl-7 border-0 ps-3"><div class="no-overflow"><a class="text-white" :href="link(faucet.Address)" target="_blank">{{ faucet.Address }}</a></div></div>
           <div class="pt-2 col-3 col-sm-3 col-lg-3 col-xl-2 text-end border-0"><button v-clipboard:copy="faucet.Address" class="nes-btn is-normal copy local d-inline-block py-0 ms-0 mr-2 my-0 nes">Copy</button></div>
 
-          <div class="pt-2 col-12 col-sm-3 col-lg-3 col-xl-3 border-0 nes"><small><small>Secret</small></small></div>
-          <div class="pt-2 col-9 col-sm-6 col-lg-6 col-xl-7 border-0 ps-3"><div class="no-overflow">{{ faucet.Secret }}</div></div>
+          <div class="pt-2 col-12 col-sm-4 col-lg-3 col-xl-3 border-0 nes"><small><small>Secret</small></small></div>
+          <div class="pt-2 col-9 col-sm-5 col-lg-6 col-xl-7 border-0 ps-3"><div class="no-overflow">{{ faucet.Secret }}</div></div>
           <div class="pt-2 col-3 col-sm-3 col-lg-3 col-xl-2 text-end border-0"><button v-clipboard:copy="faucet.Secret" class="nes-btn is-normal copy local d-inline-block py-0 ms-0 mr-2 my-0 nes">Copy</button></div>
 
-          <div class="pt-2 col-12 col-sm-3 col-lg-3 col-xl-3 border-0 nes"><small><small>TX</small></small></div>
-          <div class="pt-2 col-9 col-sm-6 col-lg-6 col-xl-7 border-0 ps-3"><div class="no-overflow"><a class="text-white" :href="link(faucet.TX)" target="_blank">{{ faucet.TX }}</a></div></div>
+          <div class="pt-2 col-12 col-sm-4 col-lg-3 col-xl-3 border-0 nes"><small><small>TX</small></small></div>
+          <div class="pt-2 col-9 col-sm-5 col-lg-6 col-xl-7 border-0 ps-3"><div class="no-overflow"><a class="text-white" :href="link(faucet.TX)" target="_blank">{{ faucet.TX }}</a></div></div>
           <div class="pt-2 col-3 col-sm-3 col-lg-3 col-xl-2 text-end border-0"><button v-clipboard:copy="faucet.TX" class="nes-btn is-normal copy local d-inline-block py-0 ms-0 mr-2 my-0 nes">Copy</button></div>
 
-          <div class="pt-2 col-12 col-sm-3 col-lg-3 col-xl-3 border-0 nes"><small><small>XRP</small></small></div>
-          <div class="pt-2 col-9 col-sm-6 col-lg-6 col-xl-7 border-0 ps-3"><div class="no-overflow">{{ faucet.XRP }}</div></div>
+          <div class="pt-2 col-12 col-sm-4 col-lg-3 col-xl-3 border-0 nes"><small><small>XRP</small></small></div>
+          <div class="pt-2 col-9 col-sm-5 col-lg-6 col-xl-7 border-0 ps-3"><div class="no-overflow">{{ faucet.XRP }}</div></div>
           <div class="pt-2 col-3 col-sm-3 col-lg-3 col-xl-2 text-end border-0"></div>
 
-          <div class="pt-2 col-12 col-sm-3 col-lg-3 col-xl-3 border-0 nes"><small><small>Result</small></small></div>
-          <div class="pt-2 col-9 col-sm-6 col-lg-6 col-xl-7 border-0 ps-3"><div class="no-overflow">{{ faucet.Result }}</div></div>
+          <div class="pt-2 col-12 col-sm-4 col-lg-3 col-xl-3 border-0 nes"><small><small>Result</small></small></div>
+          <div class="pt-2 col-9 col-sm-5 col-lg-6 col-xl-7 border-0 ps-3"><div class="no-overflow">{{ faucet.Result }}</div></div>
           <div class="pt-2 col-3 col-sm-3 col-lg-3 col-xl-2 text-end border-0"></div>
 
         </div>
