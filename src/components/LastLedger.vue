@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import RippleClient from 'rippled-ws-client'
+import { XrplClient } from 'xrpl-client'
 import VueJsonPretty from 'vue-json-pretty'
 import 'vue-json-pretty/lib/styles.css'
 
@@ -30,7 +30,7 @@ export default {
     }
   },
   async mounted () {
-    this.connection = await new RippleClient(this.$parent.endpoint, { NoUserAgent: true })
+    this.connection = await new XrplClient(this.$parent.endpoint)
     this.connection.on('ledger', ledger => {
       this.ledgerInfo = {
         ledger_index: ledger.ledger_index,
