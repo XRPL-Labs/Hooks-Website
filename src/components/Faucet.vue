@@ -32,6 +32,10 @@
           <div class="pt-2 col-9 col-sm-5 col-lg-6 col-xl-7 border-0 ps-3"><div class="no-overflow">{{ faucet.Result }}</div></div>
           <div class="pt-2 col-3 col-sm-3 col-lg-3 col-xl-2 text-end border-0"></div>
 
+          <div class="pt-2 col-12 col-sm-4 col-lg-3 col-xl-3 border-0 nes"><small><small>Debuglog</small></small></div>
+          <div class="pt-2 col-9 col-sm-5 col-lg-6 col-xl-7 border-0 ps-3"><div class="no-overflow"><a :href="'https://hooks-testnet-debugstream.xrpl-labs.com/' + faucet.Address" target="_blank" class="text-white">wss://hooks-debug-stream.../{{ faucet.Address }}</a></div></div>
+          <div class="pt-2 col-3 col-sm-3 col-lg-3 col-xl-2 text-end border-0"></div>
+
         </div>
       </div>
     </div>
