@@ -22,7 +22,7 @@
         </a> -->
         <!-- <span class="badge bg-light shadow-sm text-dark align-text-bottom">27</span> -->
         <a class="ps-0 pe-4 me-3 text-dark nav-link" href="https://github.com/XRPL-Labs/xrpld-hooks/tree/hooks-ssvm/hook-api-examples" target="_blank">Examples</a>
-        <a class="ps-0 pe-4 me-3 text-dark nav-link" href="https://xrpl-hooks.readme.io" target="_blank">Docs</a>
+        <a class="ps-0 pe-4 me-3 text-dark nav-link" href="https://xrpl-hooks.readme.io/v2.0" target="_blank">Docs</a>
         <a class="nav-link pe-4 me-3 text-dark" href="https://github.com/XRPL-Labs/xrpld-hooks" target="_blank">
           <i class="fab fa-2x fa-github-square"></i> Github
         </a>
