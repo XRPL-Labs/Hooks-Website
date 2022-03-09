@@ -33,8 +33,8 @@
           <div class="pt-2 col-3 col-sm-3 col-lg-3 col-xl-2 text-end border-0"></div>
 
           <div class="pt-2 col-12 col-sm-4 col-lg-3 col-xl-3 border-0 nes"><small><small>Debuglog</small></small></div>
-          <div class="pt-2 col-9 col-sm-5 col-lg-6 col-xl-7 border-0 ps-3"><div class="no-overflow"><a :href="'https://hooks-testnet-debugstream.xrpl-labs.com/' + faucet.Address" target="_blank" class="text-white">wss://hooks-debug-stream.../{{ faucet.Address }}</a></div></div>
-          <div class="pt-2 col-3 col-sm-3 col-lg-3 col-xl-2 text-end border-0"><button v-clipboard:copy="'wss://hooks-testnet-debugstream.xrpl-labs.com/' + faucet.Address" class="nes-btn is-normal copy local d-inline-block py-0 ms-0 mr-2 my-0 nes">Copy</button></div>
+          <div class="pt-2 col-9 col-sm-5 col-lg-6 col-xl-7 border-0 ps-3"><div class="no-overflow"><a :href="'https://hooks-testnet-v2-debugstream.xrpl-labs.com/' + faucet.Address" target="_blank" class="text-white">wss://hooks-debug-stream.../{{ faucet.Address }}</a></div></div>
+          <div class="pt-2 col-3 col-sm-3 col-lg-3 col-xl-2 text-end border-0"><button v-clipboard:copy="'wss://hooks-testnet-v2-debugstream.xrpl-labs.com/' + faucet.Address" class="nes-btn is-normal copy local d-inline-block py-0 ms-0 mr-2 my-0 nes">Copy</button></div>
 
         </div>
       </div>
@@ -61,13 +61,13 @@ export default {
   },
   methods: {
     link (data) {
-      return 'https://hooks-testnet-explorer.xrpl-labs.com/' + data
+      return 'https://hooks-testnet-v2-explorer.xrpl-labs.com/' + data
     },
     async getSome () {
       const cors = process.env.NODE_ENV.match(/dev/i)
         ? 'https://cors-anywhere.herokuapp.com/'
         : ''
-      const call = await window.fetch(cors + 'https://hooks-testnet.xrpl-labs.com/newcreds', { method: 'POST' })
+      const call = await window.fetch(cors + 'https://hooks-testnet-v2.xrpl-labs.com/newcreds', { method: 'POST' })
       const data = await call.json()
 
       if (typeof data?.error !== 'undefined') {
