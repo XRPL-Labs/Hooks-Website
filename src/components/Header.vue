@@ -29,7 +29,18 @@
       </nav>
     </div>
 
-    <p class="alert alert-primary bg-light-card-header blue-border rounded-0 shadow-sm px-3 py-2 mb-4">
+    <div class="alert alert-danger text-center">
+      <div class="-h5">
+        <span class="fw-bold">
+          Warning! This is the Hooks V1 testnet. The Hooks V1 network is deprecated and has been replaced with
+          the <a href="https://hooks-testnet-v2.xrpl-labs.com/"><b><u>Hooks V2 staging network</u></b></a>.
+        </span>
+        If you are about to use V1 or still using V1, please switch to V2. The Hooks V1 testnet will be
+        taken offline at August 1st, 2022.
+      </div>
+    </div>
+
+    <p class="alert alert-primary border-primary bg-light-card-header blue-border rounded-0 shadow-sm px-3 py-2 mb-4">
       Hooks are small, efficient <b>WebAssembly modules</b> designed specifically for the XRPL.
       <a target="_blank" href="https://coil.com/p/XUMM/XRPL-Labs-is-working-on-the-transaction-HOOKS-amendment-for-the-XRP-Ledger-Supporting-business-logic/kEmqhoqMW"><u><b>Read more about Hooks in the announcement blog post.</b></u></a>
       Hooks can be written in any language (compilable to WebAssembly) and most business

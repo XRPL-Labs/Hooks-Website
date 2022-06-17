@@ -41,10 +41,10 @@ export default {
     /**
       Styles by Tristan (screenshot)
     */
-    .blue { color: #183FB7; }
-    .blue-border { border-color: lighten(#183FB7, 45%); }
+    .blue { color: #C54136; }
+    .blue-border { border-color: lighten(#C54136, 45%); }
     .blue-highlight { color: #7592F7; }
-    .bg-blue { background-color: #183FB7; color: white; }
+    .bg-blue { background-color: #C54136; color: white; }
 
     .bg-card { background-color: #0C1637; }
     .bg-card-header { background-color: #3D4256; }
