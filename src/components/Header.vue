@@ -29,13 +29,19 @@
       </nav>
     </div>
 
-    <p class="alert alert-primary bg-light-card-header blue-border rounded-0 shadow-sm px-3 py-2 mb-4">
-      Hooks are small, efficient <b>WebAssembly modules</b> designed specifically for the XRPL.
-      <a target="_blank" href="https://coil.com/p/XUMM/XRPL-Labs-is-working-on-the-transaction-HOOKS-amendment-for-the-XRP-Ledger-Supporting-business-logic/kEmqhoqMW"><u><b>Read more about Hooks in the announcement blog post.</b></u></a>
-      Hooks can be written in any language (compilable to WebAssembly) and most business
-      logic and most <b>smart contract concepts</b> can be implemented in a hook.
-      <b><a href="https://xrpl-labs.com" target="_blank"><i class="fas fa-rocket"></i> <u>Development by XRPL Labs</u></a></b>
-    </p>
+    <div class="card shadow-sm mb-3 text-center">
+      <div class="card-body alert-primary fw-bold border-top">
+        <span class="-h5">To connect to the Hooks V2 Staging net (client, Xumm, node peering), please
+        <a href="https://xumm.notion.site/Hooks-V2-staging-net-info-XLS20-518fa261c5cd49d2bcb89a5b9e7bef05" target="_blank"><b><u>check this page &raquo;</u></b></a></span>
+      </div>
+      <div class="card-body">
+        Hooks are small, efficient <b>WebAssembly modules</b> designed specifically for the XRPL.
+        <a target="_blank" href="https://coil.com/p/XUMM/XRPL-Labs-is-working-on-the-transaction-HOOKS-amendment-for-the-XRP-Ledger-Supporting-business-logic/kEmqhoqMW"><u><b>Read more about Hooks in the announcement blog post.</b></u></a>
+        Hooks can be written in any language (compilable to WebAssembly) and most business
+        logic and most <b>smart contract concepts</b> can be implemented in a hook.
+        <b><a href="https://xrpl-labs.com/#team" target="_blank"><i class="fas fa-rocket"></i> <u>Development by XRPL Labs</u></a></b>
+      </div>
+    </div>
   </div>
 </template>
 

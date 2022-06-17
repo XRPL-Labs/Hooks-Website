@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h6 class="card-header bg-white rounded-0 border-0 nes text-white">Hooks</h6>
+    <h6 class="card-header bg-white rounded-0 border-0 nes blue">Status</h6>
     <div class="card mb-4 border-0">
       <h3 class="card-header rounded-0 border-0 h6 nes bg-light-card-header blue">
         <button v-clipboard:copy="JSON.stringify(ledgerInfo, null, 2)" class="nes-btn is-normal copy d-inline-block py-0 nes" :class="{'is-disabled': ledgerInfo === 'Connecting...'}">Copy</button>
