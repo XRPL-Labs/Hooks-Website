@@ -29,6 +29,21 @@
       </nav>
     </div>
 
+    <div class="card shadow-sm mb-3 rounded">
+      <div class="card-body rounded" id="builder">
+        <div class="row">
+          <div class="col-4 col-sm-3 col-lg-2"><img src="https://hooks.xrpl.org/images/hooks-logo.svg" class="img-fluid" /></div>
+          <div class="col-8 col-sm-9 col-lg-10">
+            <div class="h5"><strong>Develop, test and deploy your Hooks on your browser</strong></div>
+            With Hooks Builder you can develop, test, debug and deploy your own Hooks on testnet, using our examples or building your own from scratch.
+            <div class="mt-3 text-end">
+              <a href="https://hooks.xrpl.org" class="btn nes me-3 py-1 nes-btn is-warning">Start building &raquo;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="card shadow-sm mb-3 text-center">
       <div class="card-body alert-primary fw-bold border-top">
         <span class="-h5">To connect to the Hooks V2 Staging net (client, Xumm, node peering), please
@@ -56,6 +71,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  #builder {
+    background: linear-gradient(
+      49deg,
+      rgba(38, 17, 56, 1) 0%,
+      rgba(40, 33, 46, 1) 100%
+    );
+    color: white;
+  }
   .action-buttons {
     button {
       font-size: .65em;
