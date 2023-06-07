@@ -16,8 +16,8 @@
 
     <div class="nav-scroller nes mb-4">
       <nav class="nav nav-underline" aria-label="Navigation">
-        <a class="ps-0 pe-4 me-3 text-dark nav-link active" href="http://hooks-testnet-v2-explorer.xrpl-labs.com" target="_blank">Explorer</a>
-        <!-- <a class="ps-0 pe-4 me-3 text-dark nav-link" href="https://hooks-testnet-v2.xrpl-labs.com/faucet" target="_blank">
+        <a class="ps-0 pe-4 me-3 text-dark nav-link active" href="http://hooks-testnet-v3-explorer.xrpl-labs.com" target="_blank">Explorer</a>
+        <!-- <a class="ps-0 pe-4 me-3 text-dark nav-link" href="https://hooks-testnet-v3.xrpl-labs.com/faucet" target="_blank">
           Faucet
         </a> -->
         <!-- <span class="badge bg-light shadow-sm text-dark align-text-bottom">27</span> -->
@@ -46,8 +46,8 @@
 
     <div class="card shadow-sm mb-3 text-center">
       <div class="card-body alert-primary fw-bold border-top">
-        <span class="-h5">To connect to the Hooks V2 Staging net (client, Xumm, node peering), please
-        <a href="https://xumm.notion.site/Hooks-V2-staging-net-info-XLS20-518fa261c5cd49d2bcb89a5b9e7bef05" target="_blank"><b><u>check this page &raquo;</u></b></a></span>
+        <span class="-h5">To connect to the Hooks V3 Staging net (client, Xumm, node peering), please
+        <a href="https://xumm.notion.site/Hooks-V3-staging-net-info-518fa261c5cd49d2bcb89a5b9e7bef05" target="_blank"><b><u>check this page &raquo;</u></b></a></span>
       </div>
       <div class="card-body">
         Hooks are small, efficient <b>WebAssembly modules</b> designed specifically for the XRPL.
